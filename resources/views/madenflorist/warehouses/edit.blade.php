@@ -26,14 +26,14 @@
                                 <div class="form-group">
                                     <label>Type Id</label>
                                     <select class="form-control" name="type_id">
-                                        <option>Select a type</option>
+                                        <option>Cake</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Product Code</label>
-                                    <input type="text" name="sku" class="form-control" placeholder="Enter Code">
+                                    <input type="text" name="sku" class="form-control" placeholder="MF12">
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -63,14 +63,14 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Cost Price in SAR</label>
-                                    <input type="text" name="cost_price" class="form-control" placeholder="200">
+                                    <input type="text" name="cost_price" class="form-control" placeholder="100">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Quantity</label>
                                     <select class="form-control" name="show_to_customers">
-                                        <option>Select Quantity</option>
+                                        <option>1</option>
                                     </select>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@
                                 <div class="form-group">
                                     <label>Status</label>
                                     <select class="form-control" name="status">
-                                        <option>Select</option>
+                                        <option>Allowed</option>
                                     </select>
                                 </div>
                             </div>
