@@ -86,7 +86,7 @@
 
                         <div class="card-footer text-right" dir="ltr">
                             <a href="{{ route('warehouses.index') }}" class="btn btn btn-outline-dark">Cancel</a>
-                            <button type="Submit" class="btn btn-maden">Add Warehouse Product</button>
+                            <button type="Submit" class="btn btn-maden">Save Changes</button>
                         </div>
                     </div>
                 </div>
