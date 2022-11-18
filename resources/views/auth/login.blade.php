@@ -1,6 +1,6 @@
 <x-guest-layout>
     <div >
-        <div class="col-md-6" style="background-image:  url({{ asset('assets/admin-img/flower-bg.JPG') }}); background-repeat: no-repeat;height: 100vh;background-size: cover;"></div>
+        <div class="col-md-6" style="background-image:  url({{ asset('assets/admin-img/Dashboard.PNG') }}); background-repeat: no-repeat;height: 100vh;background-size: cover;"></div>
         <div class="col-md-6 align-middle">
             <div class="row">
                 <div class="login-panel panel panel-default" style="margin-top: 20%; margin-left: 15px; margin-right: 15px;">
