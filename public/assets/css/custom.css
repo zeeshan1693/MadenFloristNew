@@ -73,3 +73,34 @@ table > thead > tr {
 .maden-green{
     color: #224442;
 }
+
+.pull-right{
+    float: right !important;
+}
+
+.table-image{
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 5px;
+}
+
+/********* Maden Card **************/
+.container-card {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  .bottom-right {
+    position: absolute;
+    bottom: 80px;
+    right: 550px;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /********* Maden Card **************/
