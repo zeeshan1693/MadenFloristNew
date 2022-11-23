@@ -17,6 +17,7 @@ use App\Http\Controllers\MadenFlorist\ProductController;
 use App\Http\Controllers\MadenFlorist\AddonProductController;
 use App\Http\Controllers\MadenFlorist\WarehouseController;
 use App\Http\Controllers\MadenFlorist\OrderController;
+use App\Http\Controllers\MadenFlorist\CustomerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,6 +56,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
     Route::resource('addon-products', AddonProductController::class);
     Route::resource('warehouses', WarehouseController::class);
     Route::resource('orders', OrderController::class);
+    Route::resource('customers', CustomerController::class);
     
     Route::get('/dashboard', function () {
         return view('madenflorist.dashboard.index');
