@@ -20,6 +20,7 @@ use App\Http\Controllers\MadenFlorist\OrderController;
 use App\Http\Controllers\MadenFlorist\CustomerController;
 use App\Http\Controllers\MadenFlorist\AdminUserController;
 use App\Http\Controllers\MadenFlorist\AdminRoleController;
+use App\Http\Controllers\MadenFlorist\CountryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -62,6 +63,10 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
     Route::prefix('admins')->group(function () {
         Route::resource('admin-users', AdminUserController::class);
         Route::resource('admin-roles', AdminRoleController::class);
+    });
+
+    Route::prefix('settings')->group(function () {
+        Route::resource('countries', CountryController::class);
     });
     
     Route::get('/dashboard', function () {
