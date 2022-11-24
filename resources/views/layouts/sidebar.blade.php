@@ -116,10 +116,10 @@
             </svg>
             <span class="side-menu-fw">Users & Roles</span>
         </a>
-        <div id="collapse2" class="collapse {{ Request::segment(2) =='admin-users' ? 'show' : '' }}" aria-labelledby="heading2" data-parent="#accordionSidebar">
+        <div id="collapse2" class="collapse {{ Request::segment(2) =='admin-users' || Request::segment(2) =='admin-roles' ? 'show' : '' }}" aria-labelledby="heading2" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item side-menu-fw {{ Request::segment(2) =='admin-users' ? 'active': '' }}" href="{{ route('admin-users.index') }}">Dashboard Users</a>
-                <a class="collapse-item side-menu-fw" href="#">Roles</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='admin-roles' ? 'active': '' }}" href="{{ route('admin-roles.index') }}">Roles</a>
             </div>
         </div>
     </li>
