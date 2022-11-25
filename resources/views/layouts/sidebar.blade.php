@@ -131,10 +131,10 @@
             </svg>
             <span class="side-menu-fw">Global Settings</span>
         </a>
-        <div id="collapse3" class="collapse {{ Request::segment(2) =='countries' ? 'show' : '' }}" aria-labelledby="heading3" data-parent="#accordionSidebar">
+        <div id="collapse3" class="collapse {{ Request::segment(2) =='countries' || Request::segment(2) =='currencies' ? 'show' : '' }}" aria-labelledby="heading3" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item side-menu-fw {{ Request::segment(2) =='countries' ? 'active': '' }}" style="" href="{{ route('countries.index') }}">Country</a>
-                <a class="collapse-item side-menu-fw" style="" href="#">Currency</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='currencies' ? 'active': '' }}" style="" href="{{ route('currencies.index') }}">Currency</a>
                 <a class="collapse-item side-menu-fw" style="" href="#">Occasions</a>
                 <a class="collapse-item side-menu-fw" style="" href="#">Languge</a>
                 <a class="collapse-item side-menu-fw" style="" href="#">Api Errors</a>

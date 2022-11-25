@@ -21,6 +21,7 @@ use App\Http\Controllers\MadenFlorist\CustomerController;
 use App\Http\Controllers\MadenFlorist\AdminUserController;
 use App\Http\Controllers\MadenFlorist\AdminRoleController;
 use App\Http\Controllers\MadenFlorist\CountryController;
+use App\Http\Controllers\MadenFlorist\CurrencyController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -67,6 +68,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
 
     Route::prefix('settings')->group(function () {
         Route::resource('countries', CountryController::class);
+        Route::resource('currencies', CurrencyController::class);
     });
     
     Route::get('/dashboard', function () {
