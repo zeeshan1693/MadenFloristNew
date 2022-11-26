@@ -5,7 +5,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-4">
-                <h1 class="page-header">Add System Page</h1>
+                <h1 class="page-header">Edit System Page</h1>
             </div>
         </div>
 
