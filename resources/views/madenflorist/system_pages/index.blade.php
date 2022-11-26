@@ -9,7 +9,7 @@
             </div>
             <div class="col-lg-4 offset-lg-4">
                 <div class="text-right">
-                    <a href="{{ route('system-pages.create') }}"><button type="button" class="btn btn-maden">Add API Error</button></a>
+                    <a href="{{ route('system-pages.create') }}"><button type="button" class="btn btn-maden">Add System Page</button></a>
                 </div>
             </div>
         </div>
