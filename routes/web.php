@@ -25,6 +25,7 @@ use App\Http\Controllers\MadenFlorist\CurrencyController;
 use App\Http\Controllers\MadenFlorist\OccasionController;
 use App\Http\Controllers\MadenFlorist\LanguageController;
 use App\Http\Controllers\MadenFlorist\ApiErrorController;
+use App\Http\Controllers\MadenFlorist\SystemPageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -75,6 +76,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
         Route::resource('occasions', OccasionController::class);
         Route::resource('languages', LanguageController::class);
         Route::resource('api-errors', ApiErrorController::class);
+        Route::resource('system-pages', SystemPageController::class);
     });
     
     Route::get('/dashboard', function () {
