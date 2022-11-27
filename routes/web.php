@@ -29,6 +29,7 @@ use App\Http\Controllers\MadenFlorist\SystemPageController;
 use App\Http\Controllers\MadenFlorist\BatlaatProgramController;
 use App\Http\Controllers\MadenFlorist\BatlaatInfoController;
 use App\Http\Controllers\MadenFlorist\PaymentMethodController;
+use App\Http\Controllers\MadenFlorist\DeliveryCostController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -83,6 +84,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
         Route::resource('batlaat-programs', BatlaatProgramController::class);
         Route::resource('batlaat-info', BatlaatInfoController::class);
         Route::resource('payment-methods', PaymentMethodController::class);
+        Route::resource('delivery-costs', DeliveryCostController::class);
     });
     
     Route::get('/dashboard', function () {

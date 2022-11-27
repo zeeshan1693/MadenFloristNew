@@ -131,7 +131,7 @@
             </svg>
             <span class="side-menu-fw">Global Settings</span>
         </a>
-        <div id="collapse3" class="collapse {{ Request::segment(2) =='countries' || Request::segment(2) =='currencies' || Request::segment(2) =='occasions' || Request::segment(2) =='languages' || Request::segment(2) =='api-errors' || Request::segment(2) =='system-pages' || Request::segment(2) =='batlaat-programs' || Request::segment(2) =='batlaat-info' || Request::segment(2) =='payment-methods' ? 'show' : '' }}" aria-labelledby="heading3" data-parent="#accordionSidebar">
+        <div id="collapse3" class="collapse {{ Request::segment(2) =='countries' || Request::segment(2) =='currencies' || Request::segment(2) =='occasions' || Request::segment(2) =='languages' || Request::segment(2) =='api-errors' || Request::segment(2) =='system-pages' || Request::segment(2) =='batlaat-programs' || Request::segment(2) =='batlaat-info' || Request::segment(2) =='payment-methods' || Request::segment(2) =='delivery-costs' ? 'show' : '' }}" aria-labelledby="heading3" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item side-menu-fw {{ Request::segment(2) =='countries' ? 'active': '' }}" style="" href="{{ route('countries.index') }}">Country</a>
                 <a class="collapse-item side-menu-fw {{ Request::segment(2) =='currencies' ? 'active': '' }}" style="" href="{{ route('currencies.index') }}">Currency</a>
@@ -142,7 +142,7 @@
                 <a class="collapse-item side-menu-fw {{ Request::segment(2) =='batlaat-programs' ? 'active': '' }}" style="" href="{{ route('batlaat-programs.index') }}">Batlaat Program</a>
                 <a class="collapse-item side-menu-fw {{ Request::segment(2) =='batlaat-info' ? 'active': '' }}" style="" href="{{ route('batlaat-info.index') }}">Batlaat Info</a>
                 <a class="collapse-item side-menu-fw {{ Request::segment(2) =='payment-methods' ? 'active': '' }}" style="" href="{{ route('payment-methods.index') }}">Payment Method</a>
-                <a class="collapse-item side-menu-fw" style="" href="#">Delivery Cost</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='delivery-costs' ? 'active': '' }}" style="" href="{{ route('delivery-costs.index') }}">Delivery Cost</a>
                 <a class="collapse-item side-menu-fw" style="" href="#">Template Email</a>
                 <a class="collapse-item side-menu-fw" style="" href="#">Template SMS</a>
                 <a class="collapse-item side-menu-fw" style="" href="#">Wallet Amount</a>
