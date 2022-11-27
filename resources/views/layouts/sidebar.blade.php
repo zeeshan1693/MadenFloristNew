@@ -131,7 +131,7 @@
             </svg>
             <span class="side-menu-fw">Global Settings</span>
         </a>
-        <div id="collapse3" class="collapse {{ Request::segment(2) =='countries' || Request::segment(2) =='currencies' || Request::segment(2) =='occasions' || Request::segment(2) =='languages' || Request::segment(2) =='api-errors' || Request::segment(2) =='system-pages' ? 'show' : '' }}" aria-labelledby="heading3" data-parent="#accordionSidebar">
+        <div id="collapse3" class="collapse {{ Request::segment(2) =='countries' || Request::segment(2) =='currencies' || Request::segment(2) =='occasions' || Request::segment(2) =='languages' || Request::segment(2) =='api-errors' || Request::segment(2) =='system-pages' || Request::segment(2) =='batlaat-programs' ? 'show' : '' }}" aria-labelledby="heading3" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item side-menu-fw {{ Request::segment(2) =='countries' ? 'active': '' }}" style="" href="{{ route('countries.index') }}">Country</a>
                 <a class="collapse-item side-menu-fw {{ Request::segment(2) =='currencies' ? 'active': '' }}" style="" href="{{ route('currencies.index') }}">Currency</a>
@@ -139,7 +139,7 @@
                 <a class="collapse-item side-menu-fw {{ Request::segment(2) =='languages' ? 'active': '' }}" style="" href="{{ route('languages.index') }}">Languge</a>
                 <a class="collapse-item side-menu-fw {{ Request::segment(2) =='api-errors' ? 'active': '' }}" style="" href="{{ route('api-errors.index') }}">Api Errors</a>
                 <a class="collapse-item side-menu-fw {{ Request::segment(2) =='system-pages' ? 'active': '' }}" style="" href="{{ route('system-pages.index') }}">System Pages</a>
-                <a class="collapse-item side-menu-fw" style="" href="#">Batlaat Program</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='batlaat-programs' ? 'active': '' }}" style="" href="{{ route('batlaat-programs.index') }}">Batlaat Program</a>
                 <a class="collapse-item side-menu-fw" style="" href="#">Batlaat Info</a>
                 <a class="collapse-item side-menu-fw" style="" href="#">Payment Method</a>
                 <a class="collapse-item side-menu-fw" style="" href="#">Delivery Cost</a>

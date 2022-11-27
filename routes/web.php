@@ -26,6 +26,7 @@ use App\Http\Controllers\MadenFlorist\OccasionController;
 use App\Http\Controllers\MadenFlorist\LanguageController;
 use App\Http\Controllers\MadenFlorist\ApiErrorController;
 use App\Http\Controllers\MadenFlorist\SystemPageController;
+use App\Http\Controllers\MadenFlorist\BatlaatProgramController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -77,6 +78,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
         Route::resource('languages', LanguageController::class);
         Route::resource('api-errors', ApiErrorController::class);
         Route::resource('system-pages', SystemPageController::class);
+        Route::resource('batlaat-programs', BatlaatProgramController::class);
     });
     
     Route::get('/dashboard', function () {
