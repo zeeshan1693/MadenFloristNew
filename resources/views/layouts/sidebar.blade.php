@@ -131,31 +131,31 @@
             </svg>
             <span class="side-menu-fw">Global Settings</span>
         </a>
-        <div id="collapse3" class="collapse {{ Request::segment(2) =='countries' || Request::segment(2) =='currencies' || Request::segment(2) =='occasions' || Request::segment(2) =='languages' || Request::segment(2) =='api-errors' || Request::segment(2) =='system-pages' || Request::segment(2) =='batlaat-programs' || Request::segment(2) =='batlaat-info' || Request::segment(2) =='payment-methods' || Request::segment(2) =='delivery-costs' || Request::segment(2) =='template-emails' || Request::segment(2) =='template-sms' || Request::segment(2) =='wallet-amounts' ? 'show' : '' }}" aria-labelledby="heading3" data-parent="#accordionSidebar">
+        <div id="collapse3" class="collapse {{ Request::segment(2) =='countries' || Request::segment(2) =='currencies' || Request::segment(2) =='occasions' || Request::segment(2) =='languages' || Request::segment(2) =='api-errors' || Request::segment(2) =='system-pages' || Request::segment(2) =='batlaat-programs' || Request::segment(2) =='batlaat-info' || Request::segment(2) =='payment-methods' || Request::segment(2) =='delivery-costs' || Request::segment(2) =='template-emails' || Request::segment(2) =='template-sms' || Request::segment(2) =='wallet-amounts' || Request::segment(2) =='redeem-amounts' || Request::segment(2) =='account-deletions' || Request::segment(2) =='faqs' || Request::segment(2) =='terms-and-conditions' ? 'show' : '' }}" aria-labelledby="heading3" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='countries' ? 'active': '' }}" style="" href="{{ route('countries.index') }}">Country</a>
-                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='currencies' ? 'active': '' }}" style="" href="{{ route('currencies.index') }}">Currency</a>
-                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='occasions' ? 'active': '' }}" style="" href="{{ route('occasions.index') }}">Occasions</a>
-                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='languages' ? 'active': '' }}" style="" href="{{ route('languages.index') }}">Languge</a>
-                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='api-errors' ? 'active': '' }}" style="" href="{{ route('api-errors.index') }}">Api Errors</a>
-                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='system-pages' ? 'active': '' }}" style="" href="{{ route('system-pages.index') }}">System Pages</a>
-                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='batlaat-programs' ? 'active': '' }}" style="" href="{{ route('batlaat-programs.index') }}">Batlaat Program</a>
-                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='batlaat-info' ? 'active': '' }}" style="" href="{{ route('batlaat-info.index') }}">Batlaat Info</a>
-                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='payment-methods' ? 'active': '' }}" style="" href="{{ route('payment-methods.index') }}">Payment Method</a>
-                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='delivery-costs' ? 'active': '' }}" style="" href="{{ route('delivery-costs.index') }}">Delivery Cost</a>
-                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='template-emails' ? 'active': '' }}" style="" href="{{ route('template-emails.index') }}">Template Email</a>
-                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='template-sms' ? 'active': '' }}" style="" href="{{ route('template-sms.index') }}">Template SMS</a>
-                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='wallet-amounts' ? 'active': '' }}" style="" href="{{ route('wallet-amounts.index') }}">Wallet Amount</a>
-                <a class="collapse-item side-menu-fw" style="" href="#">Redeem Accounts</a>
-                <a class="collapse-item side-menu-fw" style="" href="#">Account Deletion</a>
-                <a class="collapse-item side-menu-fw" style="" href="#">FAQs</a>
-                <a class="collapse-item side-menu-fw" style="" href="#">Terms & Condition</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='countries' ? 'active': '' }}" href="{{ route('countries.index') }}">Country</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='currencies' ? 'active': '' }}" href="{{ route('currencies.index') }}">Currency</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='occasions' ? 'active': '' }}" href="{{ route('occasions.index') }}">Occasions</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='languages' ? 'active': '' }}" href="{{ route('languages.index') }}">Languge</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='api-errors' ? 'active': '' }}" href="{{ route('api-errors.index') }}">Api Errors</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='system-pages' ? 'active': '' }}" href="{{ route('system-pages.index') }}">System Pages</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='batlaat-programs' ? 'active': '' }}" href="{{ route('batlaat-programs.index') }}">Batlaat Program</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='batlaat-info' ? 'active': '' }}" href="{{ route('batlaat-info.index') }}">Batlaat Info</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='payment-methods' ? 'active': '' }}" href="{{ route('payment-methods.index') }}">Payment Method</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='delivery-costs' ? 'active': '' }}" href="{{ route('delivery-costs.index') }}">Delivery Cost</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='template-emails' ? 'active': '' }}" href="{{ route('template-emails.index') }}">Template Email</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='template-sms' ? 'active': '' }}" href="{{ route('template-sms.index') }}">Template SMS</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='wallet-amounts' ? 'active': '' }}" href="{{ route('wallet-amounts.index') }}">Wallet Amount</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='redeem-amounts' ? 'active': '' }}" href="{{ route('redeem-amounts.index') }}">Redeem Accounts</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='account-deletions' ? 'active': '' }}" href="{{ route('account-deletions.index') }}">Account Deletion</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='faqs' ? 'active': '' }}" href="{{ route('faqs.index') }}">FAQs</a>
+                <a class="collapse-item side-menu-fw {{ Request::segment(2) =='terms-and-conditions' ? 'active': '' }}" href="{{ route('terms-and-conditions.index') }}">Terms & Condition</a>
             </div>
         </div>
     </li>
                     
     <li class="nav-item">
-        <a class="nav-link" href="#" style="">
+        <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 17L21 12L16 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M21 12H9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -163,5 +163,8 @@
             </svg>
             <span class="side-menu-fw">Logout</span>
         </a>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+            @csrf
+        </form>
     </li>
 </ul>
