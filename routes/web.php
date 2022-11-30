@@ -33,6 +33,10 @@ use App\Http\Controllers\MadenFlorist\DeliveryCostController;
 use App\Http\Controllers\MadenFlorist\TemplateEmailController;
 use App\Http\Controllers\MadenFlorist\TemplateSmsController;
 use App\Http\Controllers\MadenFlorist\WalletAmountController;
+use App\Http\Controllers\MadenFlorist\RedeemAmountController;
+use App\Http\Controllers\MadenFlorist\AccountDeletionController;
+use App\Http\Controllers\MadenFlorist\FaqController;
+use App\Http\Controllers\MadenFlorist\TermsAndConditionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -91,6 +95,10 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
         Route::resource('template-emails', TemplateEmailController::class);
         Route::resource('template-sms', TemplateSmsController::class);
         Route::resource('wallet-amounts', WalletAmountController::class);
+        Route::resource('redeem-amounts', RedeemAmountController::class);
+        Route::resource('account-deletions', AccountDeletionController::class);
+        Route::resource('faqs', FaqController::class);
+        Route::resource('terms-and-conditions', TermsAndConditionController::class);
     });
     
     Route::get('/dashboard', function () {
