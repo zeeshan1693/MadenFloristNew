@@ -1,4 +1,7 @@
-<nav class="navbar navbar-expand topbar-bg topbar mb-4 static-top shadow">
+<nav class="navbar navbar-expand topbar-bg topbar mb-4 static-top shadow fixed-top">
+    <a class="navbar-brand" href="index.html">
+        <img src="{{ asset('assets/img/LogoX.png') }}" width="100">
+    </a>
     
     <!-- Sidebar Toggle (Topbar) -->
     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">

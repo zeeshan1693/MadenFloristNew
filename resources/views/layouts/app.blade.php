@@ -27,17 +27,17 @@
             @yield('page-styles')
         @endif
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased" style="background-color: #f7f8fa;">
         <div id="wrapper">
 
             <!-- Sidebar -->
             @include('layouts.sidebar')
     
             <!-- Content Wrapper -->
-            <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content-wrapper" class="d-flex flex-column" style="margin-top: 5rem; margin-left: 4rem;">
                 
                 <!-- Main Content -->
-                <div id="content">
+                <div id="content" class="main">
                     
                     <!-- Topbar -->
                     @include('layouts.topbar')
@@ -47,7 +47,7 @@
                         
                 </div><!-- /.container-fluid -->
             </div><!-- End of Main Content -->
-        </div>
+        </div><br><br><br><br><br>
     
         <!-- Footer -->
         @include('layouts.footer')
